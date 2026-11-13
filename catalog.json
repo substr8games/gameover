@@ -1,0 +1,434 @@
+{
+  "collections": [
+    {
+      "id": "industrial",
+      "name": "INDUSTRIAL",
+      "works": [
+        {
+          "slug": "submit",
+          "title": "SUBMIT.",
+          "front": "assets/submit.png",
+          "back": "assets/submit-back.png",
+          "telemetry": [
+            20,
+            17,
+            2,
+            13,
+            16
+          ],
+          "previewOptions": true,
+          "placeholder": true
+        },
+        {
+          "slug": "corporate-emblem",
+          "title": "Corporate Emblem",
+          "front": "assets/corp.png",
+          "telemetry": [
+            16,
+            17,
+            6,
+            14,
+            11
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "industrial-sample-1",
+          "title": "Nine Circles",
+          "front": "assets/nine-circles.png",
+          "telemetry": [
+            12,
+            18,
+            8,
+            9,
+            17
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "industrial-sample-2",
+          "title": "GAME_OVER",
+          "front": "assets/game-over.png",
+          "telemetry": [
+            14,
+            18,
+            6,
+            18,
+            11
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "industrial-sample-3",
+          "title": "Cosmic Computer",
+          "front": "assets/computer.png",
+          "telemetry": [
+            3,
+            17,
+            16,
+            20,
+            8
+          ],
+          "placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "signal",
+      "name": "SIGNAL",
+      "works": [
+        {
+          "slug": "welcome-to-earth",
+          "title": "Welcome to Earth",
+          "front": "assets/earth.png",
+          "telemetry": [
+            14,
+            17,
+            7,
+            16,
+            13
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "nine-circles",
+          "title": "Nine Circles",
+          "front": "assets/nine-circles.png",
+          "telemetry": [
+            12,
+            18,
+            8,
+            9,
+            17
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "signal-sample-1",
+          "title": "Cosmic Computer",
+          "front": "assets/computer.png",
+          "telemetry": [
+            3,
+            17,
+            16,
+            20,
+            8
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "signal-sample-2",
+          "title": "Pearls and Rights",
+          "front": "assets/pearls.png",
+          "telemetry": [
+            13,
+            18,
+            6,
+            9,
+            18
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "signal-sample-3",
+          "title": "Faceted Chess",
+          "front": "assets/chess.png",
+          "telemetry": [
+            7,
+            18,
+            13,
+            10,
+            14
+          ],
+          "placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "arcade",
+      "name": "ARCADE",
+      "works": [
+        {
+          "slug": "game-over",
+          "title": "GAME_OVER",
+          "front": "assets/game-over.png",
+          "telemetry": [
+            14,
+            18,
+            6,
+            18,
+            11
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "cosmic-computer",
+          "title": "Cosmic Computer",
+          "front": "assets/computer.png",
+          "telemetry": [
+            3,
+            17,
+            16,
+            20,
+            8
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "arcade-sample-1",
+          "title": "Faceted Chess",
+          "front": "assets/chess.png",
+          "telemetry": [
+            7,
+            18,
+            13,
+            10,
+            14
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "arcade-sample-2",
+          "title": "Bandaid Bunny",
+          "front": "assets/bunny.png",
+          "telemetry": [
+            9,
+            17,
+            12,
+            15,
+            8
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "arcade-sample-3",
+          "title": "Neon Bunny",
+          "front": "assets/bunny-neon.png",
+          "telemetry": [
+            12,
+            17,
+            8,
+            19,
+            9
+          ],
+          "placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "artifacts",
+      "name": "ARTIFACTS",
+      "works": [
+        {
+          "slug": "pearls-and-rights",
+          "title": "Pearls and Rights",
+          "front": "assets/pearls.png",
+          "telemetry": [
+            13,
+            18,
+            6,
+            9,
+            18
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "faceted-chess",
+          "title": "Faceted Chess",
+          "front": "assets/chess.png",
+          "telemetry": [
+            7,
+            18,
+            13,
+            10,
+            14
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "artifacts-sample-1",
+          "title": "Neon Bunny",
+          "front": "assets/bunny-neon.png",
+          "telemetry": [
+            12,
+            17,
+            8,
+            19,
+            9
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "artifacts-sample-2",
+          "title": "Heart Baby",
+          "front": "assets/heartbaby.png",
+          "telemetry": [
+            4,
+            17,
+            15,
+            17,
+            8
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "artifacts-sample-3",
+          "title": "Neon Heart",
+          "front": "assets/heartbaby-neon.png",
+          "telemetry": [
+            6,
+            17,
+            12,
+            20,
+            8
+          ],
+          "placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "crossover",
+      "name": "GAME_OVER × <3baby",
+      "works": [
+        {
+          "slug": "bandaid-bunny",
+          "title": "Bandaid Bunny",
+          "front": "assets/bunny.png",
+          "telemetry": [
+            9,
+            17,
+            12,
+            15,
+            8
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "neon-bunny",
+          "title": "Neon Bunny",
+          "front": "assets/bunny-neon.png",
+          "telemetry": [
+            12,
+            17,
+            8,
+            19,
+            9
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "crossover-sample-1",
+          "title": "Neon Heart",
+          "front": "assets/heartbaby-neon.png",
+          "telemetry": [
+            6,
+            17,
+            12,
+            20,
+            8
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "crossover-sample-2",
+          "title": "SUBMIT.",
+          "front": "assets/submit.png",
+          "back": "assets/submit-back.png",
+          "telemetry": [
+            20,
+            17,
+            2,
+            13,
+            16
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "crossover-sample-3",
+          "title": "Corporate Emblem",
+          "front": "assets/corp.png",
+          "telemetry": [
+            16,
+            17,
+            6,
+            14,
+            11
+          ],
+          "placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "heartbaby",
+      "name": "<3baby",
+      "fictional": true,
+      "works": [
+        {
+          "slug": "heart-baby",
+          "title": "Heart Baby",
+          "front": "assets/heartbaby.png",
+          "telemetry": [
+            4,
+            17,
+            15,
+            17,
+            8
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "neon-heart",
+          "title": "Neon Heart",
+          "front": "assets/heartbaby-neon.png",
+          "telemetry": [
+            6,
+            17,
+            12,
+            20,
+            8
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "heartbaby-sample-1",
+          "title": "Corporate Emblem",
+          "front": "assets/corp.png",
+          "telemetry": [
+            16,
+            17,
+            6,
+            14,
+            11
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "heartbaby-sample-2",
+          "title": "Welcome to Earth",
+          "front": "assets/earth.png",
+          "telemetry": [
+            14,
+            17,
+            7,
+            16,
+            13
+          ],
+          "placeholder": true
+        },
+        {
+          "slug": "heartbaby-sample-3",
+          "title": "Nine Circles",
+          "front": "assets/nine-circles.png",
+          "telemetry": [
+            12,
+            18,
+            8,
+            9,
+            17
+          ],
+          "placeholder": true
+        }
+      ]
+    }
+  ]
+}

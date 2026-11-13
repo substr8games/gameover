@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="GAME_OVER, a public art exhibition from the Phi Labs Gift Shop.">
+<meta name="fulfillment-origin" content="disabled">
+<title>GAME_OVER | Phi Labs Gift Shop</title>
+<link rel="stylesheet" href="site.css">
+<script src="store.js" type="module"></script>
+</head>
+<body>
+<main>
+<div id="gallery">
+<header class="hero">
+<img class="hero-art" src="assets/banner.png" alt="GAME OVER in neon graffiti">
+<div class="motion-controls" role="group" aria-label="Gallery movement">
+<button type="button" id="pause-rows" aria-label="Pause gallery movement" title="Pause">Ⅱ</button>
+<button type="button" id="play-rows" aria-label="Play gallery movement" title="Play">▶</button>
+<button type="button" id="rotate-gallery" aria-label="Switch to vertical gallery" aria-pressed="false" title="Switch gallery orientation">↻</button>
+</div>
+</header>
+<div class="gallery-frame">
+<button type="button" class="cylinder-arrow cylinder-left" aria-label="Show previous collection">❮</button>
+<button type="button" class="cylinder-arrow cylinder-right" aria-label="Show next collection">❯</button>
+<div id="rows" aria-live="polite"><p class="status">Loading exhibition…</p></div>
+</div>
+</div>
+<article id="detail" hidden></article>
+</main>
+<footer><span>PHI LABS CORP.</span><span>ADMISSION: FREE.</span></footer>
+</body>
+</html>
