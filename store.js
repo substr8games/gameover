@@ -1,10 +1,18 @@
 import {loopRail} from './loop.js';
 import {installIdleExhibit} from "./idle.js";
+import {applyThumbnailFrame, thumbnailPath} from './thumbnail.js';
 
 function installLoop(rail, collection, row) {
   const tiles = collection.works.map(work => tile(work, collection));
   rail.append(...tiles);
   loopRail(rail, tiles, row, motion);
+  // loopRail duplicates tiles before their images necessarily finish loading;
+  // bind framing to every clone as well as each original tile.
+  const works = new Map(collection.works.map(work => [work.slug, work]));
+  for (const copied of rail.querySelectorAll('a.work')) {
+    const item = works.get(copied.getAttribute('href').slice(7));
+    if (item) applyThumbnailFrame(copied.querySelector('img'), item);
+  }
 }
 
 const gallery = document.querySelector('#gallery');
@@ -89,9 +97,14 @@ function swing(rails, from, to, startOpacity, endOpacity) {
           box.bottom <= originY || box.top >= originY + size) continue;
       const source = tile.querySelector('img');
       if (!source) continue;
-      const art = element('img', '', 'rotation-art');
-      art.alt = '';
-      art.src = source.currentSrc || source.src;
+      const art = element('div', '', 'rotation-art');
+      // Keep the framing instead of reverting to the full image during rotation.
+      const artImage = source.cloneNode(true);
+      artImage.alt = '';
+      art.append(artImage);
+      const slug = source.closest('a.work')?.getAttribute('href')?.slice(7);
+      const cropWork = collectionsForRotation?.get(slug);
+      if (cropWork) applyThumbnailFrame(artImage, cropWork);
       Object.assign(art.style, {
         left: box.left - originX + 'px',
         top: box.top - originY + 'px',
@@ -134,6 +147,7 @@ pause.addEventListener("click", () => setMotion(false));
 play.addEventListener("click", () => setMotion(true));
 motionPreference.addEventListener("change", event => setMotion(!event.matches));
 const itemLinks = new Map();
+let collectionsForRotation;
 let galleryPosition = 0;
 let activeItem = null;
 
@@ -195,7 +209,9 @@ function tile(work, collection) {
   const open = link('', '#/item/' + work.slug, 'work');
   open.setAttribute('aria-label', 'View ' + work.title);
   const meter = gauges(work.telemetry, true);
-  open.append(image(work.front, work.title), meter);
+  const art = image(thumbnailPath(work), work.title);
+  applyThumbnailFrame(art, work);
+  open.append(art, meter);
   const caption = element('p', work.title, 'tile-title');
   const fictional = isFictional(work, collection);
   caption.append(element('span', fictional ? 'SOLD OUT' : '↗', fictional ? 'sold-out' : ''));
@@ -358,6 +374,7 @@ try {
     ...group,
     works: hasRealWork ? group.works.filter(work => work.placeholder !== true) : group.works
   })).filter(group => group.works.length > 0);
+  collectionsForRotation = new Map(collections.flatMap(group => group.works.map(work => [work.slug, work])));
   renderGallery(collections);
   installIdleExhibit({gallery, rows, motion, motionPreference, switchOrientation, collections});
   route(collections);

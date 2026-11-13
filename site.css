@@ -231,3 +231,9 @@ footer{border-top:1px solid var(--line);margin-top:2rem}
 .product-options h2 { font-size: 1rem; }
 .product-options p { color: var(--muted); line-height: 1.5; }
 .product-options ul { padding-inline-start: 1.2rem; line-height: 1.5; }
+
+/* GRIFT thumbnail compositions, relative to each square gallery tile. */
+.work { overflow:hidden; }
+.work img.thumbnail-image { position:absolute;max-width:none;display:block; }
+.rotation-art { overflow:hidden; background:#151618; }
+.rotation-art img.thumbnail-image { position:absolute;max-width:none;display:block; }
